@@ -9,4 +9,10 @@ public class Dinosaur extends Pet{
         this.name = name;
         this.sound = sound;
     }
+
+    @Override
+    public void speak() {
+        super.speak();
+        System.out.println(sound);
+    }
 }
