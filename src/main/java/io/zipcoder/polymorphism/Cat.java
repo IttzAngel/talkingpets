@@ -3,16 +3,16 @@ package io.zipcoder.polymorphism;
 public class Cat extends Pet{
 
     private String name;
-    private String sound;
+    private String typeOfPet;
 
-    public Cat(String name, String sound) {
+    public Cat(String name, String typeOfPet) {
+        super(name, typeOfPet);
         this.name = name;
-        this.sound = sound;
+        this.typeOfPet = typeOfPet;
     }
 
     @Override
-    public void speak() {
-        super.speak();
-        System.out.println(sound);
+    public String speak() {
+        return "Meow";
     }
 }

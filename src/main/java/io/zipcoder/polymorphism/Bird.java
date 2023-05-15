@@ -1,11 +1,11 @@
 package io.zipcoder.polymorphism;
 
-public class Dog extends Pet{
+public class Bird extends Pet{
 
     private String name;
     private String typeOfPet;
 
-    public Dog(String name, String typeOfPet) {
+    public Bird(String name, String typeOfPet) {
         super(name, typeOfPet);
         this.name = name;
         this.typeOfPet = typeOfPet;
@@ -13,6 +13,6 @@ public class Dog extends Pet{
 
     @Override
     public String speak() {
-        return "Woof woof";
+        return "Cacaw!";
     }
 }
