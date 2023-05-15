@@ -3,16 +3,16 @@ package io.zipcoder.polymorphism;
 public class Dinosaur extends Pet{
 
     private String name;
-    private String sound;
+    private String typeOfPet;
 
-    public Dinosaur(String name, String sound) {
+    public Dinosaur(String name, String typeOfPet) {
+        super(name, typeOfPet);
         this.name = name;
-        this.sound = sound;
+        this.typeOfPet = typeOfPet;
     }
 
     @Override
-    public void speak() {
-        super.speak();
-        System.out.println(sound);
+    public String speak() {
+        return "ROARRRRRR";
     }
 }
